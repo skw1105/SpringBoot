@@ -43,6 +43,11 @@ public class Posts {
         this.author = author;
     }
 
+    public void update(String title, String content) {
+        this.title = title;
+        this.content = content;
+    }
+
 //    // 이런식으로 호출하지 않는다.
 //    public static Order order;
 //    public static void cancelOrder() {
