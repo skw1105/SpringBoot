@@ -17,10 +17,10 @@ public class PostsUpdateRequestDto {
         this.content = content;
     }
 
-    public Posts toEntity() {
-        return Posts.builder()
-                .title(getTitle())
-                .content(getContent())
-                .build();
-    }
+//    public Posts toEntity() {
+//        return Posts.builder()
+//                .title(getTitle())
+//                .content(getContent())
+//                .build();
+//    }
 }
