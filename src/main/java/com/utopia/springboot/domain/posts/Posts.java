@@ -1,5 +1,6 @@
 package com.utopia.springboot.domain.posts;
 
+import com.utopia.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -22,7 +23,7 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity //테이블과 연결될 클래스임을 나타냄, 기본적으로 클래스명의 Camel Case를 ASD_QWE 형식으로 매칭시켜줌 (AsdQwe -> ASD_QWE)
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     @Id //테이블의 PK 필드
     @GeneratedValue(strategy = GenerationType.IDENTITY) //PK의 생성 규칙을 나타냄, GenerationType.IDENTIFY를 추가해줘야 Auto-Increment가 된다.
